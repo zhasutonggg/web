@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKPINK</title>
+</head>
+<link rel="stylesheet" href="/static/css/bp.css">
+<body>
+    
+    <header>
+        <div>
+            <p id="date">今天的日期是</p>
+        </div>
+        <!--注册-->
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;float:right">注册</button>
+
+        <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="checkbox" checked="checked"> Remember me
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+            </div>
+        </form>
+        </div>
+        <div class="logo">
+            <a href="../BP.html">
+                <img src="../img/group.jpg" alt="blackpink" width="100%">
+            </a>
+        </div>
+    </div>
+    <nav class="menu">
+        <ul>
+            <li><a href="../BP.html";class="home">首页</a></li>
+            <li><a href="profile.html";class="profile">简况</a></li>
+            <li><a href="works.html";class="works">作品</a></li>
+            <li><a href="sign up.html"class="contact">联系我们</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<main>
+    <body background="1234.jpg">
+        <form>
+        <table align="center" width="800" height="800" border="0    " cellpadding="0" cellspacing="0">
+        <tr>
+            <td width="160"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td height="50" >邮箱</td>
+            <td><input type="text" placeholder="Email Address" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td height="70"><font size="-1" color="#66747f">我们绝不会把您的邮箱分享给别人</font></td>
+        </tr>
+        <tr>
+            <td height="50" >登录用户名</td>
+            <td><input type="text" placeholder="Name" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td height="70"><font size="-1" color="#66747f">仅在登录时使用，字符不少于4个字</font></td>
+        </tr>
+        <tr height="30">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td height="40" >性别</td>
+            <td><input type="radio" name="a"/>男</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td height="30"><input type="radio" name="a" />女</td>
+        </tr>
+        <tr height="30">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td height="50" >喜好</td>
+            <td><select size="1">
+            <option>Jisoo</option>
+            <option>Jennie</option>
+            <option>Lisa</option>
+            <option>Rose</option>
+            </select></td>
+        </tr>
+        <tr height="30">
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td height="50" >留言与建议</td>
+            <td><textarea name="textfield" cols="70" rows="6" id="textfield"></textarea>
+        </tr>
+        <tr height="100">
+        <td></td>
+        <td><input type="submit" onclick="myFunction33()" value="提交" style="margin-left:200px;width:50px;height:30px;background-color:#fff0f3; color: black; border: none"/></td>
+        </tr>
+        </tr>
+
+
+        <tr>
+        <td></td>
+        <td></td>
+        </tr>
+        
+        </table>
+        </form>
+        <div ><img class="bye" src="../img/bye.gif"></img></div>
+        <footer style="margin:0 auto">
+            <div class="footer">
+                <a href="#"><input type="submit" 
+                value="回到顶部" 
+                style="width:70px;height:33px;background-color:#fff0f3; color: black; border: none"/>
+                </a>
+            </div>
+        </footer>
+        </body>
+        <script src="/static/js/bp.js"></script>
+</main>

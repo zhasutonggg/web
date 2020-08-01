@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKPINK</title>
+</head>
+<link rel="stylesheet" href="../bp.css">
+<body> 
+    <header>
+        <div>
+			<p id="date">今天的日期是</p>
+		</div>
+		<!--注册-->
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;float:right">注册</button>
+
+        <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="checkbox" checked="checked"> Remember me
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+            </div>
+        </form>
+        </div>
+        <div class="logo">
+            <a href="../BP.html">
+                <img src="../img/group.jpg" alt="blackpink" width="100%">
+            </a>
+        </div>
+            <nav class="menu">
+                <ul>
+					<li><a href="../BP.html";class="home">首页</a></li>
+					<li><a href="profile.html";class="profile">简况</a></li>
+					<li><a href="works.html";class="works">作品</a></li>
+					<li><a href="sign up.html"class="contact">联系我们</a></li>
+				</ul>
+            </nav>
+        </div>
+   </header>
+    <main>
+        <main class="text-main2">
+			<p class="text-main3">
+				TOP 5 SONGS
+			</p>
+			<div>
+				<p class="text-word">
+					1. KILL THIS LOVE
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/Kill this love.mp3" type="">
+				</audio>
+				<p class="text-word2">
+					2. DDU-DU DDU-DU
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/DDU-DU DDU-DU.mp3" type="">
+				</audio>
+				<p class="text-word2">
+					3. Don't know what to do
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/Dont know what to do.mp3" type="">
+				</audio>
+				<p class="text-word2">
+					4. Forever Young
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/Forever Young.mp3" type="">
+				</audio>
+				
+				<p class="text-word2">
+					5. As if it's Your Last
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/As if it's Your Last.mp3" type="">
+				</audio>
+			</div>
+			<br /><br />
+		</main>
+		<div>
+			<!-- 图片改为你的图片地址 -->
+			<h2 style="text-align:center">Album Lightbox</h2>
+			<p style="text-align:center">试试点击图片！</p>
+			<br />
+			<div class="row">
+			<div class="column">
+				<img src="../img/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="../img/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="../img/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="../img/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+			</div>
+			
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+				
+					<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="../img/1.jpg" style="width:100%">
+					</div>
+				
+					<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="../img/2.jpg" style="width:100%">
+					</div>
+				
+					<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="../img/3.jpg" style="width:100%">
+					</div>
+					
+					<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="../img/4.jpg" style="width:100%">
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+					<div class="caption-container">
+					<p id="caption"></p>
+					</div>
+				
+				
+					<div class="column">
+					<img class="demo cursor" src="../img/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Square Up">
+					</div>
+					<div class="column">
+					<img class="demo cursor" src="../img/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Kill This Love">
+					</div>
+					<div class="column">
+					<img class="demo cursor" src="../img/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Lovie">
+					</div>
+					<div class="column">
+					<img class="demo cursor" src="../img/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Kill This Love">
+					</div>
+				</div>
+			</div>
+		</div>
+		<br /><br /><br /><br /><br /><br />
+	</main>
+	<footer style="margin:0 auto">
+		<div class="footer">
+			<a href="#"><input type="submit" 
+			value="回到顶部" 
+			style="width:70px;height:33px;background-color:#fff0f3; color: black; border: none"/>
+			</a>
+		</div>
+	</footer>
+	<script src="../bp.js"></script>
+</body>
+
+</html>

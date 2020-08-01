@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKPINK</title>
+</head>
+<link rel="stylesheet" href="../bp.css">
+<body> 
+    <header>
+        <div>
+			<p id="date">今天的日期是</p>
+        </div>
+        <div class="logo">
+            <a href="../BP.html">
+                <img src="../img/group.jpg" alt="blackpink" width="100%">
+            </a>
+        </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../BP.html";class="home"><div onmouseover="mOver1(this)" onmouseout="mOut1(this)">Home</div></a></li>
+                    <li><a href="profile.html";class="profile"><div onmouseover="mOver2(this)" onmouseout="mOut2(this)">Profile</div></a></li>
+                    <li><a href="works.html";class="works"><div onmouseover="mOver3(this)" onmouseout="mOut3(this)">Works</div></a></li>
+                    <li><a href="sign up.html"class="contact"><div onmouseover="mOver4(this)" onmouseout="mOut4(this)">Sign Up</div></a></li>
+                </ul>
+            </nav>
+        </div>
+   </header>
+    <main>
+        <main class="text-main2">
+			<p class="text-main3">
+				TOP 5 SONGS
+			</p>
+			<div>
+				<p class="text-word">
+					1. KILL THIS LOVE
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/Kill this love.mp3" type="">
+				</audio>
+				<p class="text-word2">
+					2. DDU-DU DDU-DU
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/DDU-DU DDU-DU.mp3" type="">
+				</audio>
+				<p class="text-word2">
+					3. Don't know what to do
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/Dont know what to do.mp3" type="">
+				</audio>
+				<p class="text-word2">
+					4. Forever Young
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/Forever Young.mp3" type="">
+				</audio>
+				
+				<p class="text-word2">
+					5. As if it's Your Last
+				</p>
+				<audio controls class="audio-1">
+					<source src="../img/As if it's Your Last.mp3" type="">
+				</audio>
+			</div>
+			<br /><br />
+		</main>
+		<div>
+			<!-- 图片改为你的图片地址 -->
+			<h2 style="text-align:center">Album Lightbox</h2>
+			<br /><br />
+			<div class="row">
+			<div class="column">
+				<img src="../img/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="../img/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="../img/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="../img/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+			</div>
+			
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+				
+					<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="../img/1.jpg" style="width:100%">
+					</div>
+				
+					<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="../img/2.jpg" style="width:100%">
+					</div>
+				
+					<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="../img/3.jpg" style="width:100%">
+					</div>
+					
+					<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="../img/4.jpg" style="width:100%">
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+					<div class="caption-container">
+					<p id="caption"></p>
+					</div>
+				
+				
+					<div class="column">
+					<img class="demo cursor" src="../img/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+					</div>
+					<div class="column">
+					<img class="demo cursor" src="../img/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+					</div>
+					<div class="column">
+					<img class="demo cursor" src="../img/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+					</div>
+					<div class="column">
+					<img class="demo cursor" src="../img/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+					</div>
+				</div>
+			</div>
+		</div>
+		<br /><br /><br /><br /><br /><br />
+	</main>
+	<footer style="margin:0 auto">
+		<div class="footer">
+			<a href="#"><input type="submit" 
+			value="回到顶部" 
+			style="width:70px;height:33px;background-color:#fff0f3; color: black; border: none"/>
+			</a>
+		</div>
+	</footer>
+	<script src="../bp.js"></script>
+</body>
+
+</html>

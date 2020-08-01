@@ -1,0 +1,148 @@
+{% load  staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACKPINK</title>
+</head>
+<link rel="stylesheet" href="{% static '/css/bp.css' %}">
+<body>
+    <header>
+        <!--时间-->
+        <div >
+            <p id="date"></p>
+        </div> 
+        <!--注册-->
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;float:right">注册</button>
+
+        <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="checkbox" checked="checked"> Remember me
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+            </div>
+        </form>
+        </div>
+        <!--图片-->
+        <div class="logo">
+            <a href={% static "BP.html" %}">
+                <img src="http://121.199.36.47:8000/static/img/group.jpg" alt="blackpink" width="100%">
+            </a>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="http://121.199.36.47:8000/static/BP.html";class="home">首页</a></li>
+                <li><a href="http://121.199.36.47:8000/static/html/profile.html";class="profile">简况</a></li>
+                <li><a href="http://121.199.36.47:8000/static/html/works.html";class="works">作品</a></li>
+                <li><a href="http://121.199.36.47:8000/static/html/sign up.html"class="contact">联系我们</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <br /><br />
+    <div id="gudnong"><marquee direction=left>
+        BLACKPINK IN YOUR AREA
+     </marquee></div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <img src="http://121.199.36.47:8000/static/img/j1.png" style="width:100%">
+        <div class="text1">JISOO</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <img src="http://121.199.36.47:8000/static/img/j2.png" style="width:100%">
+        <div class="text1">JENNIE</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <img src="http://121.199.36.47:8000/static/img/j3.png" style="width:100%">
+        <div class="text1">ROSE</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">4/ 4</div>
+        <img src="http://121.199.36.47:8000/static/img/j4.png" style="width:100%">
+        <div class="text1">LISA</div>
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(4)"></span> 
+    </div>
+    <br /><br /><br />
+        <main>
+            <section class="jisoo">
+                <h2>Jisoo</h2>
+                <p  onmouseover="style.color='#6f3030'"onmouseout="style.color='black'">
+                    JISOO在韩国出生和长大。她在YG实习了五年，是乐队中年龄最大的成员。<br /> 
+                    她是主唱和门面。<br />
+                    她最初打算以女演员的身份首次亮相，但最终成为了偶像。<br /> 
+                    是最坚强、最负责任的成员，她从不在别人面前哭。<br /><br /></p>
+                <div class="box-jisoo"></div>
+            </section>
+            <section class="jennie">
+                <h2>JENNIE</h2>
+                <p onmouseover="style.color='#6f3030'"onmouseout="style.color='black'">
+                    她出生在韩国，但9岁时去新西兰学习，5年后回到家乡成为偶像。<br /> 
+                    实习了六年。她是乐队的主唱和rapper。她于2018年11月首次独唱。<br />
+                        乍一看是个很害羞的女孩子，但其实是一个很有品位的漂亮女孩。<br /><br /></p>
+                    <div class="box-jennie"></div>
+            </section>
+            <section class="rose">
+                <h2>ROSÉ</h2>
+                <p onmouseover="style.color='#6f3030'"onmouseout="style.color='black'">
+                    她出生在新西兰，8岁时搬到了澳大利亚。<br />
+                    在ROSE15岁时，她在澳大利亚YG试镜中获得第一名。<br />
+                    实习了四年。在队伍里担任主唱和舞蹈。<br />
+                    她在各方面都很有才华，她会唱歌、跳舞、弹钢琴和弹吉他，画得很漂亮。<br />
+                    她心地善良，喜欢吃东西，但讨厌鳄梨<br /><br /></p>
+                    <div class="box-rose"></div>
+            </section>
+    
+            <section class="lisa">
+                <h2>LISA</h2>
+                <p onmouseover="style.color='#6f3030'"onmouseout="style.color='black'">
+                    LISA出生在泰国。在14岁时，她参加了YG的试镜并来到韩国<br />
+                    刚刚到韩国时，只会说“你好”。<br />
+                    实习了五年。她是乐队中最年轻的成员，也是rapper担当和主舞。<br />
+                    他喜欢海豹突击队和拍照。有动力，有爱心，总是保护她的朋友们。<br /><br /></p>
+                    <div class="box-lisa"></div>
+            </section>
+        </main>
+        <footer style="margin:0 auto">
+            <div class="footer">
+                <a href="#"><input type="submit" 
+                value="回到顶部" 
+                style="width:70px;height:33px;background-color:#fff0f3; color: black; border: none"/>
+                </a>
+            </div>
+        </footer>
+        <script src="http://121.199.36.47:8000/static/js/bp.js"></script>
+        </body>
+       
+     </html>
